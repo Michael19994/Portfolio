@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="../JavaScript/slideshow.js" defer></script>
+  <link rel="stylesheet" href="../CSS/style.css">
+  <title>Michael Lyon Portfolio</title>
+</head>
+<body>
+
+  <header>
+
+    <img
+        class="headerbanner"
+        srcset="../Images/patagonia-588085_1920.png 480w, ../Images/argentina-4810395_1920.jpg 800w"
+        sizes="(max-width: 600px) 480px,
+              800px"
+        src="../Images/patagonia-588085_1920.png"
+        alt="Patagonia mountains" />
+
+        <div class="header__border"></div>
+
+    <nav class="navbar">
+      <ul class="navbar__ul">
+        <li class="navbar__li">
+          <a class="navbar__a" href="/">Home</a>
+        </li>
+        <li class="navbar__li">
+          <a class="navbar__a" href="techstack.html">TechStack</a>
+        </li>
+        <li class="navbar__li">
+          <a class="navbar__a" href="projects.html">Projects</a>
+        </li>
+        <li class="navbar__li">
+          <a class="navbar__a" href="about.html">About</a>
+        </li>
+        <li class="navbar__li">
+          <a class="navbar__a" href="contact.html">Contact</a>
+        </li>
+      </ul>
+    </nav>
+
+  </header>
+
+  <main>
+
+    <main class="maincontainer">
+
+      <h1 class="main__title">Projects</h1>
+
+        <div class="pro__slide_container">
+
+          <!-- Full-width images with number and caption text -->
+          <div class="pro__mySlides">
+            <figure>
+              <p class="pro__numbertext">1 / 3</p>
+              <img class="pro__img_projects_slides" src="./Images/LeafletProjectImg.png" alt="">
+              <figcaption class="pro__figcaption">
+                <a class="pro__link" href="https://github.com/Michael19994/leaflet-project">JavaScript Project</a>
+              </figcaption>
+            <p class="pro__p">
+              Football clubs themed web app using JavaScript with Leaflet. This was duo project. 
+              I did not initially plan to make this a project as I was just experimenting with leaflet and how I could visually display data using google maps.  
+              I realised I could turn this into a project were I largely used Figma to design the rest of the app. 
+              I also took into account accessibility when designing by ensuring there was an alternative to the map should users be unable to use it. 
+              I also was able to get familiar using JavaScript combined with HMTL and CSS to implement a search bar feature and having multiple modal windows. 
+            </p>
+          </figure>
+          </div>
+        
+          <div class="pro__mySlides">
+            <figure>
+              <p class="pro__numbertext">2 / 3</p>
+              <img class="pro__img_projects_slides" src="./Images/whackamole.png" alt="">
+              <figcaption class="pro__figcaption">
+              <a class="pro__link" href="https://github.com/inkyblinkypinkyclyde/game-dev">React Project</a>
+              </figcaption>
+              <p class="pro__p">
+                Arcade games themed web app using JavaScript with React Js framework.  
+                Working in a team of four, we used multiple planning techniques such as wireframing, 
+                object diagrams and Trello to assign and to manage work.  
+                We implemented Socket.IO to synchronise play between multiple clients. 
+                Git and GitHub were used for source code control and to allow collaborative working.  
+                Each team member worked off a feature branch, created a pull request and then merged to the develop branch, 
+                each day the team resolved conflicts and then merged development to main.
+              </p>
+            </figure>
+          </div>
+        
+          <div class="pro__mySlides">
+            <figure>
+              <p class="pro__numbertext">3 / 3</p>
+              <img class="pro__img_projects_slides" src="./Images/wheelchair-30023_640.png" alt="">
+              <figcaption class="pro__figcaption">
+              <a class="pro__link" href="https://github.com/Michael19994/Accessibilty-Project">Accessibility Project</a>
+              </figcaption>
+              <p class="pro__p">
+                Web accessibility themed app on how I can contribute to making my future work more accessible to people of all disabilities.  
+                In this project I look at several different features and how they can significantly make a big difference on how all of us interact 
+                with the web and increasing awareness on topics such as colour, contrast, keyboard interaction and visual design. Still in progress.
+              </p>
+            </figure>
+          </div>
+        
+          <!-- Next and previous buttons -->
+          <button class="pro__prev" onclick="plusSlides(-1)">&#10094;</button>
+          <button class="pro__next" onclick="plusSlides(1)">&#10095;</button>
+        </div>
+        <br>
+        
+        <!-- The dots/circles -->
+        <div class="pro__dot_container">
+          <span class="pro__dot" onclick="currentSlide(1)"></span>
+          <span class="pro__dot" onclick="currentSlide(2)"></span>
+          <span class="pro__dot" onclick="currentSlide(3)"></span>
+        </div>
+
+        
+    </main>
+
+    <footer class="footercontainer">
+
+      <div class="footer__linkwrapper1">
+  
+        <div class="footer__div_holder">
+            <img class="footer__img_linklogo" src="Images/social-media-6400130_640 (2).png" alt="LinkedIn logo">
+            <a class="footer__a" href="https://www.linkedin.com/in/michaellyon19994/">LinkedIn</a>
+        </div>
+      
+        <div class="footer__div_holder">
+            <img class="footer__img_linklogo" src="./Images/github-mark.png" alt="GitHub logo">
+            <a class="footer__a" href="https://github.com/Michael19994">GitHub</a>
+        </div>
+  
+      </div>
+  
+      <div class="footer__linkwrapper2">
+        <img 
+              class="footer__imglogo"
+              srcset="../Images/mel_logo_v1.png 480w, ../Images/mel_logo_v1.png 800w"
+              sizes="(max-width: 600px) 480px,
+                    800px"
+              src="../Images/mel_logo_v1.png"
+              alt="logo" />
+      </div>
+    </footer>
+    
+</body>
+</html>

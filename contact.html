@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../CSS/style.css">
+  <title>Michael Lyon Portfolio</title>
+   <!--Leaflet css-->
+  <!-- <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.1/dist/leaflet.css" integrity="sha256-sA+zWATbFveLLNqWO2gtiw3HL/lh1giY/Inf1BJ0z14=" crossorigin="" /> -->
+  <script src="/leaflet/leaflet.js" defer></script>
+  <script type="module" src="JavaScript/map.js" defer></script>
+  <link rel="stylesheet" href="/leaflet/leaflet.css">
+  
+</head>
+<body>
+
+  <header>
+
+    <img
+        class="headerbanner"
+        srcset="../Images/patagonia-588085_1920.png 480w, ../Images/argentina-4810395_1920.jpg 800w"
+        sizes="(max-width: 600px) 480px,
+              800px"
+        src="../Images/patagonia-588085_1920.png"
+        alt="Patagonia mountains" />
+
+        <div class="header__border"></div>
+
+    <nav class="navbar">
+      <ul class="navbar__ul">
+        <li class="navbar__li">
+          <a class="navbar__a" href="/">Home</a>
+        </li>
+        <li class="navbar__li">
+          <a class="navbar__a" href="techstack.html">TechStack</a>
+        </li>
+        <li class="navbar__li">
+          <a class="navbar__a" href="projects.html">Projects</a>
+        </li>
+        <li class="navbar__li">
+          <a class="navbar__a" href="about.html">About</a>
+        </li>
+        <li class="navbar__li">
+          <a class="navbar__a" href="contact.html">Contact</a>
+        </li>
+      </ul>
+    </nav>
+
+  </header>
+
+  <main>
+
+    <main class="maincontainer">
+
+      <h1 class="main__title">Contact</h1>
+
+      <div class="contact__div_container1">
+        <div class="contact__div_title">
+          <h2> Lets keep in touch!</h2>
+        </div>
+      </div>
+
+      <div class="contact__div_container2">
+
+        <section class="contact__section_left">
+
+          <h3 class="contact__sect_title">Meet Me</h3>
+          <figure class="contact__figure_box">
+            <img
+              class="contact__figure_img"
+              srcset="Images/pin-1873372_640.png 480w, Images/pin-1873372_640.png 800w"
+              sizes="(max-width: 600px) 480px,
+                    800px"
+              src="./Images/pin-1873372_640.png"
+              alt="marker icon" />
+              <p> Edinburgh, Scotland</p>
+          </figure>
+
+          <figure class="contact__figure_box">
+                <img
+                  class="contact__figure_img"
+                  srcset="Images/email-309491_640.png 480w, Images/email-309491_640.png 800w"
+                  sizes="(max-width: 600px) 480px,
+                        800px"
+                  src="./Images/email-309491_640.png"
+                  alt="email icon" />
+                  <p>Michaellyon19994@gmail.com</p>
+          </figure>
+
+        </section>
+
+        <section class="contact__section_centre">
+          <h3 class="contact__sect_title">FAQ</h3>
+            <p class="contact__sect_question">What can I do for you?</p>
+              <p class="contact__sect_answer">
+                I can ensure that users can easily interact with the pages of your website. 
+                This can be done with a combination of design, technology and programming to code a website’s appearance, as well as taking care of debugging. 
+              </p>
+
+            <p class="contact__sect_question">How will we meet on a regular basis?</p>
+              <p class="contact__sect_answer">
+                If you are remote based then I am happy to use Zoom to discuss how you want a project built.
+                if you are in Edinburgh or close by then I am more than happy to discuss in person.
+              </p>
+
+            <p class="contact__sect_moreQuestion">Any further questions, do not hesitate to contact me.</p>
+        </section>
+        
+        <section class="contact__section_right">
+          <div alt="Map centered in Edinburgh" aria-label="map" id="map"></div> 
+        </section>
+        
+      </div>
+      </main>
+
+  <footer class="footercontainer">
+
+    <div class="footer__linkwrapper1">
+
+      <div class="footer__div_holder">
+          <img class="footer__img_linklogo" src="Images/social-media-6400130_640 (2).png" alt="LinkedIn logo">
+          <a class="footer__a" href="https://www.linkedin.com/in/michaellyon19994/">LinkedIn</a>
+      </div>
+    
+      <div class="footer__div_holder">
+          <img class="footer__img_linklogo" src="./Images/github-mark.png" alt="GitHub logo">
+          <a class="footer__a" href="https://github.com/Michael19994">GitHub</a>
+      </div>
+
+    </div>
+
+    <div class="footer__linkwrapper2">
+      <img 
+            class="footer__imglogo"
+            srcset="../Images/mel_logo_v1.png 480w, ../Images/mel_logo_v1.png 800w"
+            sizes="(max-width: 600px) 480px,
+                  800px"
+            src="../Images/mel_logo_v1.png"
+            alt="logo" />
+    </div>
+  </footer>
+  
+</body>
+</html>
